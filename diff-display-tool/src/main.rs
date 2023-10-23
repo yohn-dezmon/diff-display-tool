@@ -1,8 +1,8 @@
 use std::fs;
 
 fn main() {
-    let file_1_data = fs::read_to_string("src/data/ex_file_1.json").expect("Unable to read file 1");
-    let file_2_data = fs::read_to_string("src/data/ex_file_2.json").expect("Unable to read file 2");
+    let file_1_data = fs::read_to_string("src/large_data/ex_file_1.json").expect("Unable to read file 1");
+    let file_2_data = fs::read_to_string("src/large_data/ex_file_2.json").expect("Unable to read file 2");
 
     // Split the file contents into lines
     let lines_1: Vec<&str> = file_1_data.lines().collect();
